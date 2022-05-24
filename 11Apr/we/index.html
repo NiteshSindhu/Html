@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Document</title>
+       <style>
+                #heading{
+                    width:50%;height:200px;
+                     margin:auto;text-align: center;
+                } 
+                #heading>h1{font-size:50px}  
+                #heading>p{margin-top:-20px;font-size:22px;
+                    line-height:20px;color:grey} 
+                #card{width:65%;height:auto;
+                margin:auto; margin-top:100px; display:flex;} 
+                #card > div{width:30%;height:100%;margin: auto;
+                    text-align: center; box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px; border-radius: 30px;}
+                #card>div:nth-child(1)>h1{color:green;}
+                #card>div:nth-child(2)>h1{color:orange;}
+                #card>div:nth-child(3)>h1{color:rgb(95, 95, 248);}
+                #card>div>h1+p{font-style: italic;color:grey;margin-top:-20px;}
+                #card>div>p+p{paddin:0px 20px 0px 30px;font-size:22px; line-height: 30px;}
+                button{border:1px solid rgb(28,28,206);color:rgb(28,28,206);background-color: white;
+                border-radius: 20px; padding:20px 50px 20px 50px;margin-top:40px; font-size: 25px;
+                margin-bottom: 40px; font-weight: bold;}
+                button:hover{
+                    color:white;background-color: rgb(28,28,206);
+                }
+                div>h2{
+                    margin-top:20px
+                }
+
+       </style> 
+</head>
+<body>
+    <div id="heading">
+        <h1>Choose a plan that right for your business</h1>
+        <p>We collect reviews from our users so you can get an honest
+             opinion of what an experience with our website are really like!</p>
+    </div>
+    <div id="card">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience
+                with our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Business Plan</h2>
+            <h1 >$39.00</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience
+                with our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+        <div>
+            <h2>Premium Plan</h2>
+            <h1 >$59.00</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience
+                with our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>
