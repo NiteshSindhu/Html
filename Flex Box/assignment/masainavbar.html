@@ -7,34 +7,19 @@
     <title>Document</title>
 </head>
 <style>
-    body{background-color:rgb(20, 24, 20);}
-    #card{background-color: rgb(20, 24, 20);
-    position:sticky;
-}
-    #container {
-        align-items: center;justify-content: center;display:flex;background-color: black;margin-top:19%;
-    }
-    #container>p:nth-child(1){
-        font-weight: 600;font-size: 15px;margin-left:0px;color:#ffffff
-    }
-    #container>p:nth-child(2){
-        color:red; margin-left:15px; font-size:15px;font-weight: 600;
-    }
-    #box{
+    /* body{background-color:rgb(20, 24, 20);
+       } */
+     #box{
         align-items:center;
         justify-content:center;
+        align-content: center;
         display:flex;background-color:#FFFFFF;height:88px;position:sticky;
-        position:relative;height:100px;
-    }
-    .im{
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    width:144px;height:40px;
-    margin:0px 10rem 0px 5rem;
+        height:100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     img{
-    display:inline-block;
+    display:inline-block;width:144px;height:40px;
+    margin:0px 10rem 0px 0px;
         }
     #card{
         flex-wrap: wrap; 
@@ -42,27 +27,48 @@
     p{
         margin-left:3rem; font-weight: 600;
     }
-    button{color:red;border: 1px solid red;font-size:20px; font-weight: 500;margin-left:3rem;}
+    select{font-size: 600;
+    font-size: 1.2rem;
+    border:0px;
+    }
+    #box>div:nth-child(8){
+        height:50px; width:200px; justify-content: center;
+        background-color: #f2fdff;display: flex;margin-left:3rem;align-content: center;
+    }
+    #box>div:nth-child(8)>p{
+        margin-left:5px;color:#6e71cc
+    }
+    #box>div:nth-child(8):hover{
+        background-color: rgba(199, 222, 241, 0.6);;
+    }
+    #box>div:nth-child(8)>img{
+        height:20px;
+        width:20px; 
+        margin:15px 5px 0px 5px;
+    }
+    button{color:red;border: 1px solid red;font-size:20px; font-weight: 500;margin:0px 3rem 0px 3rem;padding: 10px;}
+    button:hover{color:yellow;background-color: blue; border:0px;}
 </style>
-<body>
-           <div id="card">
-        <div id="container">
-            <p>Register for The Coding Classroom and learn the basics of web development for free.</p>
-            <p>REGISTER > </p>
-        </div>
+    <body>
         <div id="box">
-                <div class="im">
+               
                     <img src="https://www.masaischool.com/img/navbar/logo.svg"/>
-                </div>
-                <p>COURSES ˅</p>
+                <select name="COURSES">
+                    <option>COURSES</option>
+                    <option>Web Design</option>
+                    <option>Data Analytics</option>
+                    <option>DSA</option>
+                </select>
                 <p>FEES & ISA</p>
                 <p>ABOUT US</p>
                 <p>HIRE FROM US</p>
                 <p>FAQ</p>
                 <p>EVENTS</p>
+                <div>
+                <p>REFER & EARN</p>
+                <img src="https://www.masaischool.com/img/referral/hand.png"/>
+                </div>
                 <button>LOGIN</button>
-        </div>
-        </div>
-    </div>
-</body>
+          </div>
+    </body>
 </html>
